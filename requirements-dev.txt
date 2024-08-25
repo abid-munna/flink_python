@@ -1,5 +1,6 @@
--r requirements.txt
+confluent_kafka
 kafka-python==2.0.2
+kafka-python-ng
 apache-flink==1.17.1
 black
 pytest

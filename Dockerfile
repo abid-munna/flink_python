@@ -40,3 +40,7 @@ RUN apt-get update -y && \
 
 # install PyFlink
 RUN pip3 install apache-flink==${FLINK_VERSION}
+
+COPY requirements-dev.txt /
+
+RUN pip3 install -r /requirements-dev.txt
