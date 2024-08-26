@@ -81,7 +81,7 @@ if __name__ == "__main__":
         .set_bootstrap_servers(BOOTSTRAP_SERVERS)
         .set_topics("sunset")
         .set_group_id("group.sunset")
-        .set_starting_offsets(KafkaOffsetsInitializer.latest())
+        .set_starting_offsets(KafkaOffsetsInitializer.earliest())
         .set_value_only_deserializer(
             JsonRowDeserializationSchema.builder()
             .type_info(SunsetData.get_value_type_info())

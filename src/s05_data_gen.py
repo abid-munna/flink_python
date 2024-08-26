@@ -193,4 +193,4 @@ if __name__ == "__main__":
         logging.info("skip to create topics...")
 
     # send records
-    client.send_items(wait_for=1)
+    client.send_items(wait_for=3)
